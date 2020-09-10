@@ -31,7 +31,7 @@
         "fabric": "*",
         "minecraft": "1.16.x",
         "autoconfig1u": "*",
-        "nbtcrafting": "*"
+        "nbtcrafting": "1.16.x"
     },
     "suggests": {
         "flamingo": "*"
