@@ -1,4 +1,4 @@
-# Fabric Example Mod
+# Fabric LivingItems
 
 ## Setup
 
@@ -7,3 +7,8 @@ For setup instructions please see the [fabric wiki page](https://fabricmc.net/wi
 ## License
 
 This template is available under the CC0 license. Feel free to learn from it and incorporate it in your own projects.
+
+## Inspiration
+
+Inspired by Dofus Livitinem : https://www.dofus.com/en/mmorpg/encyclopedia/equipment/9234-livitinem
+Inspiré des Obvijevan de Dofus : https://www.dofus.com/fr/mmorpg/encyclopedie/equipements/9234-chapeau-obvijevan

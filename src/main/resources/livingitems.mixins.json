@@ -1,0 +1,13 @@
+{
+    "required": true,
+    "minVersion": "0.8",
+    "package": "net.tiphainelaurent.livingitems.mixin",
+    "compatibilityLevel": "JAVA_8",
+    "mixins": [],
+    "client": [
+        "OnCrafted"
+    ],
+    "injectors": {
+        "defaultRequire": 1
+    }
+}
