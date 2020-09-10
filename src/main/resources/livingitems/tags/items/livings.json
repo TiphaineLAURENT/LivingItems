@@ -1,0 +1,9 @@
+{
+    "replace": false,
+    "values": [
+        "livingitems:living_helmet",
+        "livingitems:living_chestplate",
+        "livingitems:living_leggings",
+        "livingitems:living_boots"
+    ]
+}

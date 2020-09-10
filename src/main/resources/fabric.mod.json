@@ -19,17 +19,19 @@
     "environment": "*",
     "entrypoints": {
         "main": [
-            "net.fabricmc.tiphainelaurent.livingitems"
+            "net.tiphainelaurent.livingitems.LivingItems"
         ]
     },
     "mixins": [
-        "modid.mixins.json"
+        "livingitems.mixins.json"
     ],
 
     "depends": {
         "fabricloader": ">=0.7.4",
         "fabric": "*",
-        "minecraft": "1.16.x"
+        "minecraft": "1.16.x",
+        "autoconfig1u": "*",
+        "nbtcrafting": "*"
     },
     "suggests": {
         "flamingo": "*"

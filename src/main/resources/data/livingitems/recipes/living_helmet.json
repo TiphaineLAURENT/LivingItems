@@ -1,0 +1,26 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " W ",
+        "WNW",
+        "LLL"
+    ],
+    "key": {
+        "W": {
+            "tag": "minecraft:wool"
+        },
+        "N": {
+            "item": "minecraft:nether_star"
+        },
+        "L": {
+            "item": "minecraft:leather"
+        }
+    },
+    "result": {
+        "item": "livingitems:living_helmet",
+        "count": 1,
+        "data": {
+            "livings": true
+        }
+    }
+}
