@@ -34,6 +34,8 @@ dependencies {
 	include "me.sargunvohra.mcmods:autoconfig1u:${project.auto_config_1u_version}"
 
 	modImplementation "de.siphalor:nbtcrafting-${project.nbt_crafting_version}"
+
+	modRuntime "me.shedaniel:RoughlyEnoughItems:${project.rei_version}"
 }
 
 processResources {
