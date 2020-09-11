@@ -1,7 +1,12 @@
 {
+    "itemGroup.livingitems.general": "Living Items",
+
+    "item.livingitems.armors.tooltip": "Here to annoy you. Do not ask why!",
     "item.livingitems.living_helmet": "Living Helmet",
     "item.livingitems.living_chestplate": "Living Chestplate",
     "item.livingitems.living_leggings": "Living Leggings",
     "item.livingitems.living_boots": "Living Boots",
-    "item.livingitems.armors.tooltip": "Here to annoy you. Do not ask why!"
+
+    "item.livingitems.philosophers_stone": "Philosophers's Stone",
+    "item.livingitems.philosophers_stone.tooltip": "Make things alive. Use carefully !"
 }

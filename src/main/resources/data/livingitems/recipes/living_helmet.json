@@ -2,15 +2,26 @@
     "type": "minecraft:crafting_shaped",
     "pattern": [
         " W ",
-        "WNW",
+        "WSW",
         "LLL"
     ],
     "key": {
         "W": {
             "tag": "minecraft:wool"
         },
-        "N": {
-            "item": "minecraft:nether_star"
+        "S": {
+            "item": "livingitems:philosophers_stone",
+            "data": {
+                "require": {
+                    "Damage": ""
+                }
+            },
+            "remainder": {
+                "item": "livingitems:philosophers_stone",
+                "data": {
+                    "Damage": "$ i0.Damage + 1"
+                }
+            }
         },
         "L": {
             "item": "minecraft:leather"

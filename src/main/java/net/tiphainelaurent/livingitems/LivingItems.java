@@ -20,12 +20,13 @@ import net.tiphainelaurent.livingitems.items.LivingBoots;
 import net.tiphainelaurent.livingitems.items.LivingChestplate;
 import net.tiphainelaurent.livingitems.items.LivingHelmet;
 import net.tiphainelaurent.livingitems.items.LivingLeggings;
+import net.tiphainelaurent.livingitems.items.PhilosophersStone;
 
 public class LivingItems implements ModInitializer
 {
 	public static final String MOD_ID = "livingitems";
 
-	public static final ItemGroup ITEM_GROUP = FabricItemGroupBuilder.create(new Identifier(MOD_ID))
+	public static final ItemGroup ITEM_GROUP = FabricItemGroupBuilder.create(new Identifier(MOD_ID, "general"))
 																	 .icon(() -> new ItemStack(Items.DEAD_FIRE_CORAL))
 																	 .build();
 
@@ -42,5 +43,7 @@ public class LivingItems implements ModInitializer
 		Registry.register(Registry.ITEM, LivingChestplate.ID, new LivingChestplate());
 		Registry.register(Registry.ITEM, LivingLeggings.ID, new LivingLeggings());
 		Registry.register(Registry.ITEM, LivingBoots.ID, new LivingBoots());
+
+		Registry.register(Registry.ITEM, PhilosophersStone.ID, new PhilosophersStone());
 	}
 }
