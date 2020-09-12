@@ -1,6 +1,7 @@
 plugins {
 	id 'fabric-loom' version '0.4-SNAPSHOT'
 	id 'maven-publish'
+	id 'com.matthewprenger.cursegradle' version '1.4.0'
 }
 
 sourceCompatibility = JavaVersion.VERSION_1_8
@@ -88,5 +89,27 @@ publishing {
 	repositories {
 		// uncomment to publish to the local maven
 		// mavenLocal()
+	}
+}
+
+curseforge {
+	apiKey = "68b55bcf-a648-4a58-9dd0-a49d65c1a39a"
+	project {
+		id = "407771"
+		changelog = "First version of Living Items inspired by Dofus"
+		releaseType = "alpha"
+		addGameVersion "${project.minecraft_version}"
+
+		relations {
+			requiredLibrary "fabric"
+			requiredDependency "nbtcrafting"
+			requiredDependency "autoconfig1u"
+
+			optionalDependency "RoughlyEnoughItems"
+		}
+
+		mainArtifact(jar) {
+			displayName = "Living Items version: ${project.version}"
+		}
 	}
 }
