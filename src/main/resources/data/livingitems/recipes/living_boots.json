@@ -1,0 +1,33 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "LSL",
+        "L L"
+    ],
+    "key": {
+        "S": {
+            "item": "livingitems:philosophers_stone",
+            "data": {
+                "require": {
+                    "Damage": ""
+                }
+            },
+            "remainder": {
+                "item": "livingitems:philosophers_stone",
+                "data": {
+                    "Damage": "$ i0.Damage + 1"
+                }
+            }
+        },
+        "L": {
+            "item": "minecraft:leather"
+        }
+    },
+    "result": {
+        "item": "livingitems:living_boots",
+        "count": 1,
+        "data": {
+            "livings": true
+        }
+    }
+}
