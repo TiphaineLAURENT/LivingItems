@@ -27,7 +27,7 @@ public class OnCrafted
 	private PlayerEntity player;
 
 	@Environment(EnvType.CLIENT)
-	@Inject(method = "onCrafted(Lnet/minecraft/item/ItemStack;)V", at = @At(value = "INVOKE", target = "Lnet/minecraft/item/ItemStack;onCraft(Lnet/minecraft/world/World;Lnet/minecraft/entity/player/PlayerEntity;I)V"))
+	@Inject(method = "onCrafted(Lnet/minecraft/item/ItemStack;)V", at = @At(value = "INVOKE"))
 	private void onCrafted(final ItemStack itemStack, final CallbackInfo info)
 	{
 		if (player.hasStackEquipped(EquipmentSlot.HEAD))

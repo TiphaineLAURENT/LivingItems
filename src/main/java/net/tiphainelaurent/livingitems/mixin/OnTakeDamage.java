@@ -25,7 +25,7 @@ public class OnTakeDamage
     final ChestplateConfiguration configuration = LivingItems.config.chestplate;
 
 	@Environment(EnvType.CLIENT)
-	@Inject(method = "damage(Lnet/minecraft/entity/damage/DamageSource;F)Z", at = @At(value = "TAIL", target = "net/minecraft/entity/player/PlayerEntity;damage(Lnet/minecraft/entity/damage/DamageSource;F)Z"))
+	@Inject(method = "damage(Lnet/minecraft/entity/damage/DamageSource;F)Z", at = @At(value = "TAIL"))
 	private boolean onTakeDamage(final DamageSource damageSource, final float amount, final CallbackInfoReturnable<Boolean> info)
 	{
         final PlayerEntity player = (PlayerEntity)(Object)this;

@@ -23,7 +23,7 @@ public class OnSprinting
 {
 
 	@Environment(EnvType.CLIENT)
-	@Inject(method = "increaseStat(Lnet/minecraft/util/Identifier;I)V", at = @At(value = "TAIL", target = "increaseStat(Lnet/minecraft/util/Identifier;I)V"))
+	@Inject(method = "increaseStat(Lnet/minecraft/util/Identifier;I)V", at = @At(value = "TAIL"))
 	private void onSprinting(final Identifier stat, final int amount, final CallbackInfo info)
 	{
         final PlayerEntity player = PlayerEntity.class.cast(this);
