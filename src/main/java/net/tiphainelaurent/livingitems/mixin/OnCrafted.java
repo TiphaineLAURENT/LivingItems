@@ -41,17 +41,6 @@ public class OnCrafted
 			}
 		}
 
-		if (player.hasStackEquipped(EquipmentSlot.LEGS))
-		{
-			final ItemStack helmet = player.getEquippedStack(EquipmentSlot.HEAD);
-			final CompoundTag helmet_tag = helmet.getTag();
-			if (helmet_tag.contains("livings") && LivingItems.random.nextInt(100) <= LivingItems.config.general.talkingChance)
-			{
-				final String sentence = LivingItems.config.leggings.craftSentences.get(LivingItems.random.nextInt(LivingItems.config.helmet.craftSentences.size()));
-				player.sendMessage(Text.of(sentence), false);
-			}
-		}
-
 		if (player.hasStackEquipped(EquipmentSlot.FEET))
 		{
 			final ItemStack helmet = player.getEquippedStack(EquipmentSlot.HEAD);

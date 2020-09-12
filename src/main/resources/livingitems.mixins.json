@@ -6,7 +6,8 @@
     "mixins": [],
     "client": [
         "OnCrafted",
-        "OnTakeDamage"
+        "OnTakeDamage",
+        "OnSprinting"
     ],
     "injectors": {
         "defaultRequire": 1
