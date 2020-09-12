@@ -100,13 +100,6 @@ curseforge {
 		releaseType = "alpha"
 		addGameVersion "${project.minecraft_version}"
 
-		relations {
-			requiredLibrary "fabric"
-			requiredDependency "nbtcrafting"
-			requiredDependency "autoconfig1u"
-
-			optionalDependency "RoughlyEnoughItems"
-		}
 
 		mainArtifact(jar) {
 			displayName = "Living Items version: ${project.version}"
